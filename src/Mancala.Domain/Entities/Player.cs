@@ -11,17 +11,33 @@ namespace Mancala.Domain.Entities
 {
     public class Player
     {
-        public string Username { get; set; }
-        public bool IsActive { get; set; }
-        public PlayerType PlayerType { get; set; }
-        public int PlayerInput { get; set; }
+        public string Username { get; private set; }
+        public bool IsActive { get; private set; }
+        public PlayerType PlayerType { get; private set; }
+        public int PlayerInput { get; private set; }
 
-        public Player(string username, bool isActice, PlayerType playerType, int playerInput)
+        public Player(string username, bool isActice, PlayerType playerType)
         {
             Username = username;
             IsActive = isActice;
             PlayerType = playerType;
-            PlayerInput = playerInput;
+        }
+
+        public static Player Create(string username, bool isActive, PlayerType playerType)
+        {
+            return new Player(username, isActive, playerType);
+        }
+
+        public Player SetPlayerInput(int playerInput)
+        {
+            this.PlayerInput = playerInput;
+            return this;
+        }
+
+        public Player SetIsActive(bool isActive)
+        {
+            this.IsActive = isActive;
+            return this;
         }
 
         public Board Move(Board board)

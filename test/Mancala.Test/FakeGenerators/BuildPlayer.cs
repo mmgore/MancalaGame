@@ -47,7 +47,7 @@ namespace Mancala.Test
         }
         public Player Build()
         {
-            return new Player(_username, _isActive, _playerType, _playerInput);
+            return Player.Create(_username, _isActive, _playerType).SetPlayerInput(_playerInput);
         }
     }
 }

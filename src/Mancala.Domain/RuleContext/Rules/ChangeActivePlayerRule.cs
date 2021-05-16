@@ -15,10 +15,10 @@ namespace Mancala.Domain.RuleContext.Rules
 
             var otherPlayer = (activePlayer.PlayerType == PlayerType.Player1) ? board.Players.FirstOrDefault(x => x.PlayerType == PlayerType.Player2) : board.Players.FirstOrDefault(x => x.PlayerType == PlayerType.Player1);
 
-            activePlayer.IsActive = false;
+            activePlayer.SetIsActive(false);
             if (otherPlayer != null)
             {
-                otherPlayer.IsActive = true;
+                otherPlayer.SetIsActive(true);
             }
 
             return board;

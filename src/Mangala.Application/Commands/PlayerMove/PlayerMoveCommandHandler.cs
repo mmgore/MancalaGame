@@ -19,7 +19,7 @@ namespace Mangala.Application.Commands
         {
             Board board = _memoryCache.Get("board") as Board;
             var player = board.Players.FirstOrDefault(x => x.PlayerType == request.PlayerType);
-            player.PlayerInput = request.Input;
+            player.SetPlayerInput(request.Input);
             player.Move(board);
             _memoryCache.RemoveCache();
             _memoryCache.SetCache(board);

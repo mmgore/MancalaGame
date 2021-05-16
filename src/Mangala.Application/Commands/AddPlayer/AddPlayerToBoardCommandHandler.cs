@@ -18,7 +18,7 @@ namespace Mangala.Application.Commands.AddPlayer
         {
             Board board = _memoryCache.Get("board") as Board;
 
-            var player = new Player(request.Username, request.IsActive, request.PlayerType, 0);
+            var player = new Player(request.Username, request.IsActive, request.PlayerType);
             board.AddPlayer(player);
 
             _memoryCache.RemoveCache();

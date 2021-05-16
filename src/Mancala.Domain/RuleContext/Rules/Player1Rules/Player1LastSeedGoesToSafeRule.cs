@@ -15,7 +15,7 @@ namespace Mancala.Domain.RuleContext.Rules
 
             if (CheckIfPlayerLastSeedGoestoSafe(board, currentPlayer))
             {
-                currentPlayer.IsActive = true;
+                currentPlayer.SetIsActive(true);
                 board.GameMessage = $"{currentPlayer.PlayerType} turn";
             }
 
