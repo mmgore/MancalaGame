@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mancala.Domain", "src\Mancala.Domain\Mancala.Domain.csproj", "{A18B6AD2-3DE1-464D-986C-08EEE1F7FB21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{743C20BC-C7E9-4CDC-87EE-B808D566DC10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D7EC9CA9-5A69-4D81-9BDB-839A02B55AC4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mangala.Application", "src\Mangala.Application\Mangala.Application.csproj", "{15A05E5B-08D5-4ACC-BEF0-B04053E8C135}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mancala.Api", "src\Mancala.Api\Mancala.Api.csproj", "{E1F7F9BC-18ED-4A3F-BCBE-39FC5AAA2DDA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mancala.Test", "test\Mancala.Test\Mancala.Test.csproj", "{44F18F4F-612D-4BF7-A783-E80D293969C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A18B6AD2-3DE1-464D-986C-08EEE1F7FB21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A18B6AD2-3DE1-464D-986C-08EEE1F7FB21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A18B6AD2-3DE1-464D-986C-08EEE1F7FB21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A18B6AD2-3DE1-464D-986C-08EEE1F7FB21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15A05E5B-08D5-4ACC-BEF0-B04053E8C135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15A05E5B-08D5-4ACC-BEF0-B04053E8C135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15A05E5B-08D5-4ACC-BEF0-B04053E8C135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15A05E5B-08D5-4ACC-BEF0-B04053E8C135}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1F7F9BC-18ED-4A3F-BCBE-39FC5AAA2DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1F7F9BC-18ED-4A3F-BCBE-39FC5AAA2DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1F7F9BC-18ED-4A3F-BCBE-39FC5AAA2DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1F7F9BC-18ED-4A3F-BCBE-39FC5AAA2DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44F18F4F-612D-4BF7-A783-E80D293969C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44F18F4F-612D-4BF7-A783-E80D293969C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44F18F4F-612D-4BF7-A783-E80D293969C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44F18F4F-612D-4BF7-A783-E80D293969C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A18B6AD2-3DE1-464D-986C-08EEE1F7FB21} = {743C20BC-C7E9-4CDC-87EE-B808D566DC10}
+		{15A05E5B-08D5-4ACC-BEF0-B04053E8C135} = {743C20BC-C7E9-4CDC-87EE-B808D566DC10}
+		{E1F7F9BC-18ED-4A3F-BCBE-39FC5AAA2DDA} = {743C20BC-C7E9-4CDC-87EE-B808D566DC10}
+		{44F18F4F-612D-4BF7-A783-E80D293969C0} = {D7EC9CA9-5A69-4D81-9BDB-839A02B55AC4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E28D22F9-2A8A-4C30-97D8-3DD6AA238EE6}
+	EndGlobalSection
+EndGlobal
